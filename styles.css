@@ -1,7 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: yellow;
+    background-color: gray;
 }
 
 body {
@@ -16,15 +16,26 @@ body {
     margin: 40px auto;
     border: 2px solid black;
     width: 600px;
+    background-color: red;
 }
 
-.title {
-    font-size: 50px;
+h1 {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
     margin: 0;
     padding: 0;
 }
 
 .sizeopt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: 20px 0px 20px;
 }
 
