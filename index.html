@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./styles.css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Etch-a-Sketch</h1>
+        <div class="sizeopt">
+            <input type="text" placeholder="Size of board" value="16" oninput="changeSize(this.value)"/>
+            <button>Set Size</button>
+        </div>
+        <div class="board">
+    
+        </div>
+        <div class="options">
+            <button onclick="selectColor('black')" id="black">Black</button>
+            <button onclick="selectColor('white')" id="erasor">Erasor</button>
+            <button onclick="selectColor('rainbow')" id="rainbow">Rainbow</button>
+            <button onclick="clearBoard()" id="reset">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
