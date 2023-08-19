@@ -1,5 +1,5 @@
 let color = 'black';
-
+let displaySize = document.querySelector('.displaysize');
 
 function createBoard(size) {
     let board = document.querySelector('.board');
@@ -22,8 +22,9 @@ createBoard(16);
 function changeSize(input) {
     if (input >= 2 && input <= 100) {
         createBoard(input);
+        displaySize.textContent = `Board size: ${input} x ${input}`;
     } else {
-        console.log('Input must be between 2 and 100.');
+        displaySize.textContent = 'Input must be from 2 to 100.';
     }
 };
 
