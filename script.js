@@ -4,11 +4,12 @@ let displaySize = document.querySelector('.displaysize');
 function createBoard(size) {
     let board = document.querySelector('.board');
     let section = board.querySelectorAll('div');
+    let gridSize = size * size;
+    
     section.forEach(div => div.remove());
     board.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     board.style.gridTemplateRows = `repeat(${size}), 1fr)`;
     
-    let gridSize = size * size;
     for (let i = 0; i < gridSize; i++) {
         let section = document.createElement('div');
         section.addEventListener("mouseover", changeColor);
